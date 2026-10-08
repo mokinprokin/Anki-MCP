@@ -1,0 +1,21 @@
+[project]
+name = "ankimcp"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Макар Павлович",email = "106832520+mokinprokin@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "smart-commit-tool (>=3.0.4,<4.0.0)"
+]
