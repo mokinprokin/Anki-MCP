@@ -68,6 +68,7 @@ Add the following to your MCP client configuration (e.g. `claude_desktop_config.
     }
   }
 }
+```
 
 Option 2: Local Development
 
@@ -81,7 +82,7 @@ Option 2: Local Development
     uv sync
 
 3.  Configure your MCP client using local paths:
-
+```json
     {
       "mcpServers": {
         "anki-agent": {
@@ -95,7 +96,7 @@ Option 2: Local Development
         }
       }
     }
-
+```
 🧰 Available MCP Tools
 
 | Tool                | Description                                                                 |
@@ -122,7 +123,7 @@ REQUEST_TIMEOUT=5
 INSTRUCTIONS_FILENAME=instruction.md
 
 Example setting custom env in client JSON:
-
+```json
 {
   "mcpServers": {
     "anki": {
@@ -131,7 +132,7 @@ Example setting custom env in client JSON:
     }
   }
 }
-
+```
 🧪 Testing with MCP Inspector
 
 You can test the server locally inside your browser without connecting an LLM:
@@ -149,7 +150,8 @@ This project is licensed under the MIT License.
 1. Создай в корне репозитория файл **`instruction.md`** (если он еще не создан или назывался иначе), куда положи промпт для агента.
 2. Скопируй текст выше в свой файл **`README.md`**.
 3. Запушь изменения на GitHub:
-   ```bash
+```bash
    git add README.md instruction.md
    git commit -m "docs: add professional README and agent instructions"
    git push
+```
