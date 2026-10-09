@@ -142,16 +142,3 @@ npx @modelcontextprotocol/inspector uv run anki_mcp_server
 📄 License
 
 This project is licensed under the MIT License.
-
-
----
-
-### Что сделать перед коммитом:
-1. Создай в корне репозитория файл **`instruction.md`** (если он еще не создан или назывался иначе), куда положи промпт для агента.
-2. Скопируй текст выше в свой файл **`README.md`**.
-3. Запушь изменения на GitHub:
-```bash
-   git add README.md instruction.md
-   git commit -m "docs: add professional README and agent instructions"
-   git push
-```
