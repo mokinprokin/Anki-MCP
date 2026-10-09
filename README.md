@@ -111,28 +111,6 @@ Option 2: Local Development
 | `get_cards_in_deck` | Retrieves cards including spaced repetition statistics (`interval`, `due`). |
 | `sync_anki`         | Pushes local changes to AnkiWeb cloud.                                      |
 
-⚙️ Configuration & Environment
-
-Configuration is managed via Pydantic Settings. You can customize runtime
-parameters via a .env file or directly inside your client's "env" block:
-
-# .env.example
-ANKI_CONNECT_URL=http://127.0.0.1:8765
-DEFAULT_DECK=English
-REQUEST_TIMEOUT=5
-INSTRUCTIONS_FILENAME=instruction.md
-
-Example setting custom env in client JSON:
-```json
-{
-  "mcpServers": {
-    "anki": {
-      "command": "uvx",
-      "args": ["--from", "git+https://github.com/mokinprokin/Anki-MCP.git", "anki_mcp_server"]
-    }
-  }
-}
-```
 🧪 Testing with MCP Inspector
 
 You can test the server locally inside your browser without connecting an LLM:
